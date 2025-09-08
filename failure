@@ -1,0 +1,39 @@
+curl -Iv -u GITHUB_USERNAME https://ghe.hedgeserv.net/api/v3/repos/DevOps/Config/contents/aws/aws_stop_exclusions.json?ref=master
+
+
+Got the following:
+
+
+Enter host password for user 'oolajide':
+* About to connect() to ghe.hedgeserv.net port 443 (#0)
+*   Trying 10.98.107.139...
+* Connected to ghe.hedgeserv.net (10.98.107.139) port 443 (#0)
+* Initializing NSS with certpath: sql:/etc/pki/nssdb
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=ghe.hedgeserv.net,O=HedgeServ Corporation,L=New York,ST=New York,C=US,serialNumber=4509184,businessCategory=Private Organization,incorporationState=Delaware,incorporationCountry=US
+* 	start date: Jan 30 19:28:52 2025 GMT
+* 	expire date: Mar 03 19:28:52 2026 GMT
+* 	common name: ghe.hedgeserv.net
+* 	issuer: CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O="GoDaddy.com, Inc.",L=Scottsdale,ST=Arizona,C=US
+* Server auth using Basic with user 'oolajide'
+> HEAD /api/v3/repos/DevOps/Config/contents/aws/aws_stop_exclusions.json?ref=master HTTP/1.1
+> Authorization: Basic b29sYWppZGU6S2FyZWVtQWtpbnllbWkxKQ==
+> User-Agent: curl/7.29.0
+> Host: ghe.hedgeserv.net
+> Accept: */*
+> 
+< HTTP/1.1 307 Temporary Redirect
+HTTP/1.1 307 Temporary Redirect
+< content-length: 0
+content-length: 0
+< location: https://ghe.hedgeserv.net:8443/api/v3/repos/DevOps/Config/contents/aws/aws_stop_exclusions.json?ref=master
+location: https://ghe.hedgeserv.net:8443/api/v3/repos/DevOps/Config/contents/aws/aws_stop_exclusions.json?ref=master
+< cache-control: no-cache
+cache-control: no-cache
+
+< 
+* Connection #0 to host ghe.hedgeserv.net left intact
+
